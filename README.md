@@ -14,3 +14,7 @@ The package comes with two maze maps, and an option to make the walls spin aroun
 ![screenshot of amoebas moving in maze](https://raw.githubusercontent.com/ozmerchavy2/reinforcement-learning-amoebas/main/amoeba-screenshot.png)
 
 The package comes with pre-trained amoebas' DNA easy to load into the simulation (although it usually only takes them a couple of minutes to learn).
+
+---
+This project was a collaboration with [Oz Merchavy](https://github.com/ozmerchavy). 
+It was coded during a series the best Zoom sessions to ever be.
