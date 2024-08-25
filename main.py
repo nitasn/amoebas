@@ -105,7 +105,6 @@ def make_walls_spin():
     angle  = 0.01 if time % 200 < 100 else -0.01
     for i in range(len(death_lines) - num_to_rotate, len(death_lines)):
         death_lines[i] = rotate_segment(death_lines[i], angle)
-        # death_lines[i] = resize_segment(death_lines[i])
 
 
 
@@ -253,7 +252,11 @@ def do_evolution(num_goods=5, num_bads=1, num_clones_each=5):
 
 
 
-########################################
+#######################################
+###             M A I N             ###
+#######################################
+
+
 with open('./successful_dna.txt') as f:
     inital_dna = f.read().strip()
 
