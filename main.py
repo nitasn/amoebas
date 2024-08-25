@@ -99,7 +99,7 @@ def rotate_segment(segment, angle=0.01):
     end = rotation_matrix @ end
     return start + mid, end + mid
 
-def move_them_thingies():
+def make_walls_spin():
     global death_lines
     num_to_rotate = 8
     angle  = 0.01 if time % 200 < 100 else -0.01
@@ -298,7 +298,7 @@ def run(fps):
         clock.tick(fps)
         time += 1
 
-        #move_them_thingies()
+        make_walls_spin()
 
 
 run(fps=40)
