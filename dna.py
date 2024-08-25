@@ -17,6 +17,7 @@ class DNA:
     def __init__(self, genes: Union[str, tuple]):
         if type(genes) is str:
             array = np.array  # this hack is for 'eval'
+            # TODO use a proper JSON to avoid dangerous eval
             __dict = eval(str(base64.b64decode(genes), encoding='utf-8'))
             for k, v in __dict.items():
                 setattr(self, k, v)
